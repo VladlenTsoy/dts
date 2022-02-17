@@ -1,0 +1,36 @@
+.services {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 55px 1rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.services .title {
+    display: flex;
+    align-items: center;
+    gap: 195px;
+    margin-bottom: 42px;
+}
+
+.services .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.services .grid .item {
+    padding: 42px;
+}
+
+.services .grid .item:nth-child(odd) {
+    background: var(--bg-grey);
+}
+
+.services .grid .item .head {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 41px;
+}
+
+.services .grid .item .head h4 {
+    color: var(--primary-color);
+}

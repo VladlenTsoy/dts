@@ -1,0 +1,18 @@
+.banner {
+    min-height: 529px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    background-image: url("./banner.webp");
+    background-position: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
