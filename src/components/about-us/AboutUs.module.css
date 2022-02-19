@@ -36,3 +36,45 @@
     padding: 68px 0 53px 0;
     border-bottom: 1px solid var(--border-color);
 }
+
+@media (max-width: 992px) {
+    .container .grid {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .container .grid .content {
+        padding: 46px 1rem 51px 46px;
+    }
+
+    .container .values {
+        padding: 34px 0 26px 0;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .container .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container .grid .title {
+        border: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+
+    .container .grid .title h2 {
+        margin: 0;
+    }
+
+    .container .grid .content {
+        padding: 0 0 2rem 0;
+    }
+
+    .container .values {
+        grid-template-columns: 1fr;
+    }
+}

@@ -48,3 +48,24 @@
     padding: 0 21px;
     min-height: 48px;
 }
+
+@media (max-width: 992px) {
+    .application .info {
+        padding: 0 1rem;
+        gap: 20px;
+    }
+
+    .application .form {
+        gap: 14px 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .application .form {
+        grid-template-columns: 1fr;
+    }
+
+    .application .info {
+        flex-direction: column;
+    }
+}

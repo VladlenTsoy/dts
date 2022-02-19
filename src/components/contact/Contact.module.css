@@ -43,3 +43,27 @@
 .contact .content .info div:nth-child(odd) {
     color: var(--primary-color);
 }
+
+@media (max-width: 992px) {
+    .contact .content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .content {
+        padding: 1rem 0;
+    }
+
+    .contact .content .iconText {
+        gap: 1rem;
+    }
+
+    .contact .content .info {
+        margin-left: 0;
+    }
+}
