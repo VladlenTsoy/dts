@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    padding: 36px 1rem 66px;
+}
+
+.footer img {
+    margin-bottom: 29px;
+}
+
+.footer h4 {
+    font-size: var(--font-size-lg);
+    color: var(--primary-color);
+}
