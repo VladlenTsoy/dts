@@ -1,7 +1,7 @@
 .application {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 100px 0 73px;
+    padding: 100px 1rem 73px;
     text-align: center;
     border-bottom: 1px solid var(--border-color);
 }

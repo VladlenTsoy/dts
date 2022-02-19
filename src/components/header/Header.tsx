@@ -1,5 +1,6 @@
 import React from "react"
 import styles from "./Header.module.css"
+import {Link} from "react-scroll"
 
 const Header = () => {
     return (
@@ -7,16 +8,16 @@ const Header = () => {
             <img src="/images/logo.svg" alt="DTS" width="247" height="82" />
             <ol className={styles.navigation}>
                 <li>
-                    <a href="#about-us">About Us</a>
+                    <Link to="about-us">About Us</Link>
                 </li>
                 <li>
-                    <a href="#out-mission">Our Mission</a>
+                    <Link to="out-mission">Our Mission</Link>
                 </li>
                 <li>
-                    <a href="#services">Services</a>
+                    <Link to="services">Services</Link>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <Link to="contact">Contact</Link>
                 </li>
             </ol>
         </div>

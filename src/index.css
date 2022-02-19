@@ -46,3 +46,27 @@ h4 {
     font-size: var(--font-size-md);
     margin: 0;
 }
+
+@media (max-width: 992px) {
+    :root {
+        --font-size-title: 25px;
+        --font-size-sub: 20px;
+        --font-size-lg: 18px;
+        --font-size-md: 16px;
+        --font-size-sm: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 576px) {
+    :root {
+        --font-size-title: 22px;
+        --font-size-sub: 20px;
+        --font-size-lg: 18px;
+        --font-size-md: 16px;
+        --font-size-sm: 14px;
+    }
+}

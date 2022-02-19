@@ -1,9 +1,10 @@
 import React from "react"
 import styles from "./Contact.module.css"
+import {Element} from "react-scroll"
 
 const Contact = () => {
     return (
-        <div className={styles.contact}>
+        <Element name="contact" className={styles.contact}>
             <div className={styles.map}>
             </div>
             <div className={styles.content}>
@@ -41,7 +42,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
 

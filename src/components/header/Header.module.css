@@ -20,6 +20,7 @@
     font-family: "Orbitron", sans-serif;
     color: var(--black-color);
     transition: color .3s ease-in-out;
+    cursor: pointer;
 }
 
 .navigation li a:hover {

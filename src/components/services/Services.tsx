@@ -1,9 +1,10 @@
 import React from "react"
 import styles from "./Services.module.css"
+import {Element} from "react-scroll"
 
 const Services = () => {
     return (
-        <div className={styles.services}>
+        <Element name="services" className={styles.services}>
             <div className={styles.title}>
                 <h2>Services</h2>
                 <p>
@@ -102,7 +103,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
 
