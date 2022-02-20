@@ -1,0 +1,78 @@
+.buttonNavigation button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttonNavigation button div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 2px;
+}
+
+.draw {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 250px;
+    width: 100%;
+    background-color: black;
+    /*background: var(--primary-color);*/
+    z-index: 50;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out;
+}
+
+.draw.open {
+    transform: translateX(0);
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 35px;
+    height: 35px;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: '';
+    height: 35px;
+    width: 5px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.navigation {
+    padding: 5rem 1rem 1rem 2rem;
+    color: white;
+}
+
+.item {
+    display: block;
+    font-family: "Orbitron", sans-serif;
+    font-size: var(--font-size-lg);
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.item.active {
+    color: var(--primary-color);
+}

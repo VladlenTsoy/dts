@@ -17,12 +17,12 @@ const Application = () => {
                 </div>
             </div>
             <form className={styles.form}>
-                <input placeholder="Date of Application" />
-                <input placeholder="License Number" />
-                <input placeholder="Full name" />
-                <input placeholder="License Type" />
-                <input placeholder="Current Address" />
-                <input placeholder="License Expiration Date" />
+                <textarea placeholder="Date of Application" rows={1}/>
+                <textarea placeholder="License Number" />
+                <textarea placeholder="Full name" />
+                <textarea placeholder="License Type" />
+                <textarea placeholder="Current Address" />
+                <textarea placeholder="License Expiration Date" />
                 <CheckboxGroup placeholder="Do you have the legal right to work in the U.S.?"
                                name="1" />
                 <CheckboxGroup placeholder="Download you CDL Class A License"
@@ -32,21 +32,21 @@ const Application = () => {
                 <CheckboxGroup
                     placeholder="Have you ever been denied a license, permit or privilege to operate a motor vehicle?"
                     name="4" />
-                <input placeholder="Current Employer Company name" />
+                <textarea placeholder="Current Employer Company name" />
                 <CheckboxGroup placeholder="Have any license, permit or privilege ever been suspended or revoked?"
                                name="5" />
-                <input placeholder="Current Employer Address (please include address, city, state, and zip code)" />
-                <input placeholder="Show special courses or training that will help you as a driver" />
-                <input placeholder="Current Employer Contact Person and Phone Number" />
-                <input placeholder="What other trucking, transportation or other experience do you have?" />
-                <input placeholder="Accident Record for Past 3 Years or More" />
-                <input placeholder="List special equipment or technical materials you can work with" />
-                <input placeholder="Traffic Conviction Record for Past 3 Years or More" />
-                <input placeholder="Provide Us with Your Vehicle Information" />
-                <input
+                <textarea placeholder="Current Employer Address (please include address, city, state, and zip code)" />
+                <textarea placeholder="Show special courses or training that will help you as a driver" />
+                <textarea placeholder="Current Employer Contact Person and Phone Number" />
+                <textarea placeholder="What other trucking, transportation or other experience do you have?" />
+                <textarea placeholder="Accident Record for Past 3 Years or More" />
+                <textarea placeholder="List special equipment or technical materials you can work with" />
+                <textarea placeholder="Traffic Conviction Record for Past 3 Years or More" />
+                <textarea placeholder="Provide Us with Your Vehicle Information" />
+                <textarea
                     placeholder="List any job related classes or programs you completed, and the dates you attended" />
-                <input placeholder="Your Email" />
-                <input placeholder="State Drive License" />
+                <textarea placeholder="Your Email" />
+                <textarea placeholder="State Drive License" />
                 <button>Submit</button>
             </form>
         </div>

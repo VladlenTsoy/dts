@@ -26,3 +26,15 @@
 .navigation li a:hover {
     color: var(--primary-color);
 }
+
+@media (max-width: 992px) {
+    .navigation {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+}
