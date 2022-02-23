@@ -51,6 +51,10 @@
     resize: none;
 }
 
+.application .form textarea::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 .application .form textarea::placeholder {
     color: #6F6F6F;
     font-size: var(--font-size-sm);
