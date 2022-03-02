@@ -17,6 +17,7 @@
     font-family: "Orbitron", sans-serif;
     padding: 18px 41px;
     border: 0;
+    cursor: pointer;
 }
 
 .application .info {
@@ -34,12 +35,32 @@
     color: var(--primary-color);
 }
 
+.application .message {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: var(--font-size-title);
+}
 
 .application .form {
     padding: 55px 0 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 14px 74px;
+    position: relative;
+}
+
+.application .form .loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff4d;
+    backdrop-filter: blur(2px);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .application .form textarea {

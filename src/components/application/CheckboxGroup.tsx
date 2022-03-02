@@ -18,13 +18,13 @@ const CheckboxGroup: React.FC<CheckboxGroupProps> = ({placeholder, name}) => {
             <div className={styles.checkboxGroup}>
                 <label onClick={() => setValue("yes")}>
                     <div className={cn(styles.checkbox, {[styles.active]: value === "yes"})}>
-                        <input type="radio" name={name} value="yes" />
+                        <input type="radio" name={name} value="yes" checked={value === "yes"} />
                     </div>
                     <span>Yes</span>
                 </label>
                 <label onClick={() => setValue("no")}>
                     <div className={cn(styles.checkbox, {[styles.active]: value === "no"})}>
-                        <input type="radio" name={name} value="no" />
+                        <input type="radio" name={name} value="no" checked={value === "no"} />
                     </div>
                     <span>No</span>
                 </label>
