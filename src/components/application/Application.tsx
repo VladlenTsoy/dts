@@ -39,7 +39,7 @@ const Application = () => {
             <h2>Owner operator / Driver application for</h2>
             <button onClick={onHandler}>apply now</button>
             {visibleMessage && <div className={styles.message}>
-                Вы успешно отправили заявку!
+                You have successfully submitted your application. You will be contacted shortly!
             </div>}
             {
                 visible &&
