@@ -26,7 +26,7 @@ const Application = () => {
         e.preventDefault()
         setLoading(true)
         const body = serializeForm()
-        const response = await axios.post("http://api.dtsincorporated.com/dtsbrokers", body)
+        const response = await axios.post("http://api.dtsincorporated.com/dts", body)
         setLoading(false)
         if (response.status) {
             setVisible(false)
