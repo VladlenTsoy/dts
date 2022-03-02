@@ -26,7 +26,8 @@ const Application = () => {
         e.preventDefault()
         setLoading(true)
         const body = serializeForm()
-        const response = await axios.post("https://api.dtsincorporated.com/dts", body)
+        // const response = await axios.post("https://api.dtsincorporated.com/dts", body)
+        const response = await axios.post("http://localhost:8000/dts", body)
         setLoading(false)
         if (response.status) {
             setVisible(false)
@@ -61,9 +62,9 @@ const Application = () => {
                                 <h1>Sending...</h1>
                             </div>
                         }
-                        <textarea placeholder="Date of Application" name="date_of_application" rows={1} required />
-                        <textarea placeholder="License Number" name="license_number" required />
                         <textarea placeholder="Full name" name="full_name" required />
+                        <textarea placeholder="License Number" name="license_number" required />
+                        <textarea placeholder="Mobile Number#" name="mobile_number" rows={1} required />
                         <textarea placeholder="License Type" name="license_type" required />
                         <textarea placeholder="Current Address" name="current_address" required />
                         <textarea placeholder="License Expiration Date" name="license_expiration_date" required />
