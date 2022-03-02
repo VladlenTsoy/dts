@@ -25,8 +25,7 @@ const Application = () => {
     const onSubmitHandler = async (e: any) => {
         e.preventDefault()
         setLoading(true)
-        const formData = new FormData(e.target)
-        const body = serializeForm(formData)
+        const body = serializeForm()
         const response = await axios.post("http://api.dtsincorporated.com/dtsbrokers", body)
         setLoading(false)
         if (response.status) {
