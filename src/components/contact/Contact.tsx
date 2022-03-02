@@ -18,6 +18,7 @@ const Contact = () => {
         <Element name="contact" className={styles.contact}>
             <div className={styles.map}>
                 <LoadScript
+                    language="en"
                     googleMapsApiKey="AIzaSyBSNRntfWg3WQpwR8JWs_36lIXUFbIKpcI"
                 >
                     <GoogleMap
