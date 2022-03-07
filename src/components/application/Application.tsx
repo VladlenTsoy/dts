@@ -91,8 +91,8 @@ const Application = () => {
                                   required />
                         <textarea placeholder="Current Employer Contact Person and Phone Number"
                                   name="current_employer_contact" required />
-                        <textarea placeholder="What other trucking, transportation or other experience do you have?"
-                                  name="other_trucking" required />
+                        {/*<textarea placeholder="What other trucking, transportation or other experience do you have?"*/}
+                        {/*          name="other_trucking" required />*/}
                         <textarea placeholder="Accident Record for Past 3 Years or More" name="accident_record"
                                   required />
                         <textarea placeholder="List special equipment or technical materials you can work with"
@@ -101,9 +101,9 @@ const Application = () => {
                                   name="traffic_conviction_record" required />
                         <textarea placeholder="Provide Us with Your Vehicle Information"
                                   name="vehicle_information" required />
-                        <textarea
-                            placeholder="List any job related classes or programs you completed, and the dates you attended"
-                            name="job_related_classes" required />
+                        {/*<textarea*/}
+                        {/*    placeholder="List any job related classes or programs you completed, and the dates you attended"*/}
+                        {/*    name="job_related_classes" required />*/}
                         <textarea name="your_email" placeholder="Your Email" required />
                         <textarea name="state_drive_license" placeholder="State Drive License" required />
                         <button type="submit" disabled={loading}>{loading ? "Sending..." : "Submit"}</button>
